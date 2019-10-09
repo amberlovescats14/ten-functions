@@ -20,3 +20,33 @@
  * and
  * concat
  */
+//: if input is true return true
+const isTrue = inp => !!inp
+
+//: should return true if value is false
+const isFalse = val => !val
+
+
+//: returns a boolean opposite of what it is
+const not = inp => !inp
+
+//: I did not check input type
+const addOne = inp => Number(inp) + 1
+
+//: is an even
+const isEven = inp => inp % 2 === 0
+
+//: exact data and type
+const isIdentical = (a,b) => a === b
+
+//: equal only in value
+const isEqual = (a,b) => a == b;
+
+//:the OR of both values boolean
+const or = (a,b) => !!a || !!b
+
+//:the AND of both values booleans
+const and = (a,b) => !!a && !!b;
+
+//:make both variables strings and concat them
+const concat = (a,b) => a.toString() + b.toString()
