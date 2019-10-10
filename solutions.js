@@ -21,10 +21,12 @@
  * concat
  */
 //: if input is true return true
-const isTrue = inp => !!inp
+const isTrue = inp => inp === true;
 
 //: should return true if value is false
-const isFalse = val => !val
+const isFalse = value => value === false
+
+console.log(isFalse())
 
 
 //: returns a boolean opposite of what it is
@@ -34,7 +36,7 @@ const not = inp => !inp
 const addOne = inp => Number(inp) + 1
 
 //: is an even
-const isEven = inp => inp % 2 === 0
+const isEven = inp => inp % 2 == 0
 
 //: exact data and type
 const isIdentical = (a,b) => a === b
@@ -43,10 +45,10 @@ const isIdentical = (a,b) => a === b
 const isEqual = (a,b) => a == b;
 
 //:the OR of both values boolean
-const or = (a,b) => !!a || !!b
+const or = (a,b) => a || b
 
 //:the AND of both values booleans
-const and = (a,b) => !!a && !!b;
+const and = (a,b) => a && b;
 
 //:make both variables strings and concat them
 const concat = (a,b) => a.toString() + b.toString()
